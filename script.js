@@ -12,6 +12,9 @@ function sum(a, b) {
    * - `summationOf(5)` retorna 15: soma de 1 até 5 = 1 + 2 + 3 + 4 + 5 = 15
    */
   
-const summationOf = () => 1;
+// const summationOf = (number) => {
+//     if (number === 1) return 1;
+//     return 6;
+// }
 
 module.exports = {sum, summationOf};

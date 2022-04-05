@@ -19,3 +19,7 @@ test('dois mais dois é quatro', () => {
   test('Espera-se que o somatório de 1 seja igual a 1', () => {
     expect(summationOf(1)).toBe(1);
   });
+
+  test('Espera-se que o somatório de 3 seja igual a 6', () => {
+    expect(summationOf(3)).toBe(6);
+  });
