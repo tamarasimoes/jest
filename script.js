@@ -1,3 +1,13 @@
+/* Antes de tudo:
+- npm -v
+- npm init -y
+- ver arquivo package.json
+- git commit -m 'Configuração inicial do NPM'
+- npm install jest --save-dev
+- adicionar node_modules em .gitignore
+- git commit -m 'Instalação do Jest' */
+
+
 function sum(a, b) {
     return a + b;
 }
@@ -18,6 +28,10 @@ function sum(a, b) {
 // }
 
 const summationOf = (number) => {
+    if (number === '') {
+        throw new Error('Deve inserir um valor');
+    }
+    
     let summation = 0;
 
     for (let index = 1; index <= number; index +=1) {
@@ -26,5 +40,6 @@ const summationOf = (number) => {
 
     return summation;
 }
+
 
 module.exports = {sum, summationOf};

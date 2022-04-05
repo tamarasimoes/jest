@@ -30,6 +30,10 @@ describe('A função summationOf', () => {
   test('Espera-se que o somatório de 5 seja igual a 15', () => {
     expect(summationOf(5)).toBe(15);
   });
+
+  test('Lança um erro quando o input está vazio', () => {
+    expect(() => {summationOf('')}).toThrow('Deve inserir um valor');
+  });
 });
 
 
