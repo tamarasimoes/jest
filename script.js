@@ -17,4 +17,14 @@ function sum(a, b) {
 //     return 6;
 // }
 
+const summationOf = (number) => {
+    let summation = 0;
+
+    for (let index = 1; index <= number; index +=1) {
+        summation += index;
+    }
+
+    return summation;
+}
+
 module.exports = {sum, summationOf};
